@@ -1,8 +1,29 @@
 import React,{ useState } from 'react';
 
 const Formulario = () => {
+
+    // definir State
+    const [ nombregasto, guardarNombreGasto] = useState('');
+    const [ cantidad, guardarCantidad] = useState(0);
+
+    // cuando el usuario agrega un gasto
+    const agregarGasto = e => {
+        e.preventDefault();
+
+        // validar
+
+        // construir el gasto
+
+        // pasar el gasto al componente principal
+
+        // resetear el form
+        
+    }
+
     return ( 
-        <form>
+        <form
+            onSubmit={agregarGasto}
+        >
             <h2>Agregar tus gastos aquí</h2>
 
             <div className="campo">
@@ -11,6 +32,8 @@ const Formulario = () => {
                     type="text"
                     className="u-full-width"
                     placeholder="Ej. Transporte"
+                    value={nombregasto}
+                    onChange={e => guardarNombreGasto(e.target.value)}
                 />
             </div>
 
@@ -20,6 +43,8 @@ const Formulario = () => {
                     type="number"
                     className="u-full-width"
                     placeholder="Ej. 300"
+                    value={cantidad}
+                    onChange={e => guardarCantidad( parseInt( e.target.value) ) }
                 />
             </div>
             
