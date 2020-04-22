@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# react-presupuesto
+Se crea un presupuesto y se agregan gastos para ir decrementando del presupuesto y alertandonos hasta que se termine.
+>>>>>>> 413fee6b4885d1ba982cec40521bdb736ada4d0d
